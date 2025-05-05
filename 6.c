@@ -25,7 +25,7 @@ int main() {
         printf("A média do aluno é: %.2f\n", media);
 
         printf("NOVO CÁLCULO (S/N)? ");
-        scanf(" %c", &resposta); // Espaço antes para limpar o buffer de entrada
+        scanf(" %c", &resposta);
 
     } while (resposta == 'S' || resposta == 's');
 
