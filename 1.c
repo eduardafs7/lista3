@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    float num1, num2;
+    float valor1, valor2;
+
     printf("Digite o primeiro valor: ");
-    scanf("%f", &num1);
-
+    scanf("%f", &valor1);
+    
     printf("Digite o segundo valor: ");
-    scanf("%f", &num2);
-
-    while (num2 == 0) {
-        printf("VALOR INVÁLIDO. O segundo valor não pode ser zero.\n");
-        printf("Digite o segundo valor novamente: ");
-        scanf("%f", &num2);
+    scanf("%f", &valor2);
+    
+    // Estrutura while para garantir que o segundo valor não seja zero
+    while (valor2 == 0) {
+        printf("VALOR INVALIDO. O segundo valor nao pode ser zero. Digite novamente: ");
+        scanf("%f", &valor2);
     }
 
-    printf("Resultado da divisão: %.2f\n", num1 / num2);
+    // Realizando a divisão
+    printf("Resultado da divisao: %.2f\n", valor1 / valor2);
+
     return 0;
 }
