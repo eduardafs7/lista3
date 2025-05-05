@@ -12,7 +12,7 @@ int main() {
         contador++;
 
         printf("MAIS MERCADORIAS (S/N)? ");
-        scanf(" %c", &resposta); // Espaço antes para limpar o buffer de entrada
+        scanf(" %c", &resposta);
     } while (resposta == 'S' || resposta == 's');
 
     media = total / contador;
